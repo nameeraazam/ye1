@@ -30,15 +30,15 @@ interface PageProps {
 const posts: Post[] = [
   {
     id: '1',
-    title: "Connecting with Locals: The True Essence of Travel",
-    description: "As I wandered through the bustling night market in Kuala Lumpur...",
+    title: Connecting with Locals: The True Essence of Travel,
+    description: As I wandered through the bustling night market in Kuala Lumpur,
     date: "2024-12-25",
     imageUrl: "/images/good2.webp",
   },
   {
     id: '2',
-    title: "Sustainable Travel: Reducing Your Footprint on the Road",
-    description: "The more I travel, the more I have come to realize the importance of being a conscious traveler. Towering trees draped in vines created a dense canopy overhead.",
+    title: Sustainable Travel: Reducing Your Footprint on the Road,
+    description: The more I travel, the more I have come to realize the importance of being a conscious traveler. Towering trees draped in vines created a dense canopy overhead.,
     date: "2024-12-25",
     imageUrl: "/images/good1.webp",
   },
