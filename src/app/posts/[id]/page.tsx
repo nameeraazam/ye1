@@ -24,7 +24,6 @@ interface PageProps {
   params: {
     id: string;
   };
-  searchParams?: { [key: string]: string | string[] | undefined };
 }
 
 const posts: Post[] = [
@@ -108,7 +107,7 @@ const posts: Post[] = [
   {
     id: '12',
     title: "Overcoming Fear: My First Solo Trip Abroad",
-    description: "to embrace this new life of travel after quitting my corporate job, I'd be lying if I said I wasn't absolutely terrified. Despite years of dreaming about exploring the world.",
+    description: "to embrace this new life of travel after quitting my corporate job, I&apos;d be lying if I said I wasn&apos;t absolutely terrified. Despite years of dreaming about exploring the world.",
     date: "2024-12-25",
     imageUrl: "/images/good12.webp",
   },
@@ -262,7 +261,7 @@ const AuthorCard = () => {
   );
 };
 
-export default function Post({ params, searchParams }: PageProps) {
+export default function Post({ params }: PageProps) {
   const { id } = params;
   
   React.useEffect(() => {
@@ -278,7 +277,7 @@ export default function Post({ params, searchParams }: PageProps) {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-red-600 mb-4">Post Not Found</h1>
-          <p className="text-gray-600">The post you're looking for doesn't exist.</p>
+          <p className="text-gray-600">The post you&apos;re looking for doesn&apos;t exist.</p>
         </div>
       </div>
     );
